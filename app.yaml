@@ -1,0 +1,8 @@
+runtime: php83
+
+env_variables: 
+  GOOGLE_STORAGE_BUCKET: "queue-mockup.appspot.com"
+  CLOUDSQL_CONNECTION_NAME: "queue-mockup:us-east1:queue-mysql"
+  CLOUDSQL_USER: "root"
+  CLOUDSQL_PASSWORD: "pAssw0rd!"
+  CLOUDSQL_DATABASE_NAME: "queueDB"
