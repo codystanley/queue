@@ -145,3 +145,44 @@ If Stratus is not working then we use Globo 855.218.3758
         </div><!-- .modal-content -->
     </div><!-- .modal-dialog -->
 </div><!-- #nurseSignInModal -->
+
+<!-- Filter and Sort Modal -->
+<div class="modal fade" id="filterSortModal" tabindex="-1" aria-labelledby="filterSortModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="filterSortModalLabel">Filter & Sort</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="filterSortForm">
+                    <div class="mb-3">
+                        <label for="filterPatientState" class="form-label">Patient State:</label>
+                        <select class="form-select" id="filterPatientState">
+                            <option value="">All</option>
+                            </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sortField" class="form-label">Sort By:</label>
+                        <select class="form-select" id="sortField">
+                            <option value="submittedDateTime">Submitted Date/Time</option>
+                            <option value="patientAge">Patient Age</option>
+                            </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sortOrder" class="form-label">Order:</label>
+                        <select class="form-select" id="sortOrder">
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="applyFilterSort">Apply</button>
+            </div>
+        </div>
+    </div>
+</div>
+
